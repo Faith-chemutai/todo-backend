@@ -12,14 +12,14 @@ puts "creating users"
       username: Faker::Internet.username,
       password: Faker::Internet.password,
       email: Faker::Internet.email
-      email: Faker::Internet.gender
+    #   email: Faker::Internet.gender
     )
     puts "creating tasks"
   end
     task1 = Task.create(task_name: 'TFC', task_description: 'Tehilla tea farm', task_status: 'complete')
-    task1 = .create(task_name: 'CDH', task_description: 'cee dines hotel', task_status: 'complete')
-    task3 = .create(task_name: 'APC', task_description: 'Avocado plants ', task_status: 'incomplete')
-    task4 = .create(task_name: 'MIC', task_description: 'mark miller on',  task_status:  'incomplete')
-    task5 = .create(task_name: 'CCI', task_description: 'climate change ', task_status: 'complete')
+    task1 = Task.create(task_name: 'CDH', task_description: 'cee dines hotel', task_status: 'complete')
+    task3 = Task.create(task_name: 'APC', task_description: 'Avocado plants ', task_status: 'incomplete')
+    task4 = Task.create(task_name: 'MIC', task_description: 'mark miller on',  task_status:  'incomplete')
+    task5 = Task.create(task_name: 'CCI', task_description: 'climate change ', task_status: 'complete')
 
     puts "done seeding"
